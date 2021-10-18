@@ -5,8 +5,8 @@ Moralis.initialize("XswY5R9kfSQVMk4UzlbtePOEJRparDoFI3YUfpGZ");
 Moralis.serverURL = "https://xfh83fomhe5j.grandmoralis.com:2053/server";
 
 
-let homepage = "http://127.0.0.1:5501/05%20Creating%20A%20Web%20Wallet%20-%20part%201/index.html";
-let dashboard = "http://127.0.0.1:5501/05%20Creating%20A%20Web%20Wallet%20-%20part%201/dashboard.html";
+let homepage = "https://shonuff1221.github.io/MyWebWallet/";
+let dashboard = "https://shonuff1221.github.io/MyWebWallet/dashboard.html";
 
 // REDIRECT USER BASED ON STATUS
 
