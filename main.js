@@ -410,7 +410,10 @@ if (window.location.href == dashboard){
 }
 
 // HOMEPAGE LISTENERS
-if (window.location.href == homepage){
+if(window.location.href == homepage &&  Moralis.User.current() != null){
+    document.querySelector('#btn-login').onclick =  window.location.href = "dashboard.html";
+}
+{
     document.querySelector('#btn-login').onclick = login;
 }
 
