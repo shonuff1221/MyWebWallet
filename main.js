@@ -11,7 +11,7 @@ let dashboard = "https://shonuff1221.github.io/MyWebWallet/dashboard.html";
 // REDIRECT USER BASED ON STATUS
 if (Moralis.User.current() == null) {
     document.querySelector('body').style.display = 'none';
-    window.location.href = homepage;
+    window.location.href = "index.html";
 }
 
 
@@ -28,7 +28,7 @@ login = async () => {
             await user.save();
             document.getAnimations('userWallet').innerHTML = Moralis.User.current();
         }
-        window.location.href = dashboard;
+        window.location.href = "dashboard.html";
     })
 }
 
