@@ -32,9 +32,7 @@ login = async () => {
     })
 }
 
-if (Moralis.User.current() != null) {
-    window.location.href = "dashboard.html";
-}
+
 
 
 logout = async () => {
