@@ -28,7 +28,7 @@ login = async () => {
             await user.save();
             document.getAnimations('userWallet').innerHTML = Moralis.User.current();
         }
-        window.location.href = "dashboard.html";
+        window.location.href = dashboard;
     })
 }
 
@@ -37,7 +37,7 @@ login = async () => {
 
 logout = async () => {
     await Moralis.User.logOut();
-    window.location.href = "index.html";
+    window.location.href = homepage;
 }
 
 renderContent = (element) => {
