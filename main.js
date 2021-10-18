@@ -334,7 +334,7 @@ getTransferERC20Balances = async () => {
     if(bscTokens.length > 0){
         let tokenBalanceContent = '';
 
-        bscTokens.forforEach((e,i) => {
+        bscTokens.forEach((e,i) => {
                 let content = `
     
                 <tr>
