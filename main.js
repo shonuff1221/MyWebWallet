@@ -37,7 +37,7 @@ login = async () => {
 
 logout = async () => {
     await Moralis.User.logOut();
-    window.location.href = homepage;
+    window.location.href = "index.html";
 }
 
 renderContent = (element) => {
