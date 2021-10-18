@@ -9,7 +9,7 @@ let homepage = "https://shonuff1221.github.io/MyWebWallet/";
 let dashboard = "https://shonuff1221.github.io/MyWebWallet/dashboard.html";
 
 // REDIRECT USER BASED ON STATUS
-if (Moralis.User.current() == null && window.location.href != homepage) {
+if (Moralis.User.current() == null) {
     document.querySelector('body').style.display = 'none';
     window.location.href = "index.html";
 }
@@ -32,7 +32,7 @@ login = async () => {
     })
 }
 
-if (Moralis.User.current() != null && window.location.href == homepage) {
+if (Moralis.User.current() != null) {
     window.location.href = "dashboard.html";
 }
 
